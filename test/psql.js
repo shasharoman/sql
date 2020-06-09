@@ -43,7 +43,7 @@ describe('psql', () => {
             bar: 2,
             limit: [0, 1]
         });
-        expect(s).to.be.equal('delete from "demo" where "foo" = $1 and "bar" = $2 limit 0, 1');
+        expect(s).to.be.equal('delete from "demo" where "foo" = $1 and "bar" = $2 limit 1 offset 0');
         expect(r).to.be.deep.equal([1, 2]);
     });
 
@@ -109,7 +109,7 @@ describe('psql', () => {
             order: ['id', 'desc'],
             limit: [0, 10]
         });
-        expect(s).to.be.equal('select * from "demo" where "foo" = $1 and "bar" = $2 order by "id" desc limit 0, 10');
+        expect(s).to.be.equal('select * from "demo" where "foo" = $1 and "bar" = $2 order by "id" desc limit 10 offset 0');
         expect(r).to.be.deep.equal([1, 2]);
     });
 
