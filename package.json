@@ -1,6 +1,6 @@
 {
-    "name": "sql",
-    "version": "1.0.0",
+    "name": "@shasharoman/sql",
+    "version": "1.1.2",
     "description": "sql tools",
     "main": "index.js",
     "directories": {
@@ -25,7 +25,7 @@
     },
     "homepage": "https://github.com/shasharoman/sql#readme",
     "dependencies": {
-        "lodash": "4.17.15"
+        "lodash": "4.17.21"
     },
     "devDependencies": {
         "chai": "4.2.0",
